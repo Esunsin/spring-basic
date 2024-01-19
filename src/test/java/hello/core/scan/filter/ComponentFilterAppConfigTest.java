@@ -25,7 +25,6 @@ public class ComponentFilterAppConfigTest {
             excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION,classes = MyExcludeComponent.class)
     )
     static class ComponentFilterAppConfig{
-
     }
 
 

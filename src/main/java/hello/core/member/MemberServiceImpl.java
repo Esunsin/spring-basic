@@ -3,10 +3,11 @@ package hello.core.member;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component//Auto로 스프링 빈에 등록
 public class MemberServiceImpl implements MemberService{
+
     private final MemberRepository memberRepository;
-    @Autowired
+    @Autowired//의존관계 주입
     public MemberServiceImpl(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
